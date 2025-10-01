@@ -1,5 +1,7 @@
-# Vendor[Vendor Performance Analysis Project.pdf](https://github.com/user-attachments/files/22644949/Vendor.Performance.Analysis.Project.pdf)
 # Vendor Performance Analysis
+
+# [Vendor Performance Analysis Project.pdf](https://github.com/user-attachments/files/22644949/Vendor.Performance.Analysis.Project.pdf)
+
 
 A comprehensive data analytics project that processes multi-million record datasets to derive actionable insights into vendor performance, procurement strategies, and sales optimization.
 
@@ -38,4 +40,32 @@ This end-to-end analytics solution processes raw procurement and sales data to d
 - **Large-scale data processing** (12M+ records handled)
 
 ## 📁 Project Structure
+vendor-performance-analysis/
+│
+├── data/ # Raw data files
+│ ├── purchases.csv # 2.3M+ records
+│ ├── sales.csv # 12.8M+ records
+│ ├── vendor_invoice.csv # Vendor freight data
+│ └── inventory_data/ # Inventory records
+│
+├── database/ # Database files
+│ ├── purchases.db # Primary SQLite database
+│ └── large_purchases.db # Large sample database
+│
+├── notebooks/ # Jupyter notebooks
+│ ├── exploratory_data_analysis.ipynb
+│ ├── vendor_performance_analysis.ipynb
+│ └── blob_data_decoding.ipynb
+│
+├── scripts/ # Python modules
+│ ├── database_analyzer.py # Database management class
+│ ├── data_ingestion.py # ETL pipeline
+│ └── visualization.py # Chart generation
+│
+├── dashboards/ # Power BI reports
+│ └── vendor_performance_dashboard.pbix
+│
+└── outputs/ # Generated reports & charts
+├── performance_metrics/
+└── vendor_insights/
 
